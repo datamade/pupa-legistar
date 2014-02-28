@@ -114,7 +114,7 @@ class LegistarScraper(Scraper) :
 
                 # Is it a link?
                 address = None
-                link = field.find('a')
+                link = field.getchildren()[0].find('a')
                 if link is not None:
                     address = self._get_link_address(link)
                 if address is not None:
