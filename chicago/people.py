@@ -4,6 +4,10 @@ import lxml.html
 import datetime
 import traceback
 from collections import defaultdict
+import logging
+
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
 
 MEMBERLIST = 'https://chicago.legistar.com/People.aspx'
 
@@ -132,10 +136,8 @@ class LegistarScraper(Scraper) :
 class ChicagoPersonScraper(LegistarScraper):
     
 
-
-
+    
     def get_people(self):
-
         for councilman, committees in self.councilMembers() :
             contact_types = {
                 "City Hall Office": ("address", "City Hall Office"),
