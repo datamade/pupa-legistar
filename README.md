@@ -1,3 +1,5 @@
+# DEPRECATED, See https://github.com/opencivicdata/python-legistar-scraper/
+
 # Pupa Legistar
 
 Pupa compliant python library for scraping [Legistar sites](http://www.granicus.com/Legistar/Product-Overview.aspx) 
